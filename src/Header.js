@@ -5,8 +5,15 @@ class Header extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            logoVisible: false
+            logoVisible: false,
+            paragraphVisible: true,
         };
+    }
+
+    toggleProp = (prop) => {
+      this.setState(prevState => ({
+        [prop]: !prevState[prop],
+      }) );
     }
 
     render() {
@@ -19,7 +26,17 @@ class Header extends Component {
                 <p>Hello!</p>
             )}
             <h1 className="App-title">Welcome to React</h1>
-            <button onClick={(prevState, props) => console.log( this.state.logoVisible)}>Show Title</button>
+
+            <button onClick={this.toggleProp.bind(this, 'logoVisible') }>Show Title</button>
+
+            { this.state.paragraphVisible && (
+              <h1>Suddenly appeared!</h1>
+            )}
+
+            <button onClick={ this.toggleProp.bind(this,'paragraphVisible') }>Paragraph</button>
+
+
+
         </header>
         )
     }

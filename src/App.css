@@ -1,28 +1,91 @@
-.App {
-  text-align: center;
-}
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+a,
+div {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+a:hover {
+  text-decoration: none;
+  cursor: pointer; }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
+.fi-ribbon {
+  background-color: #20cdec;
+  color: white; }
 
-.App-title {
-  font-size: 1.5em;
-}
+.fi-header {
+  padding: 1.5rem 0;
+  color: #83ccea; }
+  .fi-header-col {
+    height: 100px; }
+  .fi-header-logo {
+    display: inline-block;
+    max-width: 200px;
+    vertical-align: bottom;
+    margin: 0 auto; }
+    .fi-header-logo-image {
+      width: 100%;
+      height: auto; }
+  .fi-header-info {
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 2rem;
+    color: #20cdec;
+    padding: 1rem 1.5rem;
+    transition: all .2s ease; }
+    .fi-header-info-border {
+      border: 2px solid #20cdec;
+      border-radius: 200px; }
+      .fi-header-info-border:hover {
+        color: white;
+        border-color: #5bdc7e;
+        background-color: #5bdc7e; }
 
-.App-intro {
-  font-size: large;
-}
+.fi-nav {
+  display: block; }
+  .fi-nav:hover .fi-nav-item {
+    opacity: .5; }
+  .fi-nav-item {
+    display: inline-block;
+    padding: 1rem 4rem;
+    font-size: 2rem;
+    color: white;
+    transition: all .5s ease; }
+    .fi-nav-item:last-child {
+      margin-right: 0; }
+    .fi-nav-item:hover {
+      background-color: #5bdc7e;
+      color: white;
+      opacity: 1 !important; }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+.fi-hero {
+  background-color: lightgray;
+  background: url("./images/fizjodentika-hero-image.jpg");
+  background-size: cover;
+  height: 80vh;
+  position: relative; }
+  .fi-hero-button {
+    background-color: #5bdc7e;
+    font-size: 25px;
+    border-radius: 200px;
+    padding: 16px 32px;
+    color: white;
+    position: relative;
+    top: 25vh;
+    left: 25vw;
+    display: inline-block; }
+
+.fi-main {
+  background-color: #83ccea;
+  color: white; }
+
+.fi-footer {
+  background-color: lightgray;
+  color: black; }

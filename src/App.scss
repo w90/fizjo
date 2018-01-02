@@ -1,0 +1,129 @@
+$color-main: #20cdec;//#83ccea;
+$color-main-light: #83ccea;
+$color-secondary: #5bdc7e; //#65ba7c;
+$color-gray: lightgray;
+$color-white: white;
+$color-black: black;
+
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+a,
+div {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.fi {
+  &-ribbon {
+    background-color: $color-main;
+    color: $color-white;
+  }
+  &-header {
+    padding: 1.5rem 0;
+    //background-color: $color-main-light;
+    color: $color-main-light;
+    &-col {
+      height: 100px;
+    }
+    &-logo {
+      display: inline-block;
+      max-width: 200px;
+      vertical-align: bottom;
+      margin: 0 auto;
+      &-image {
+        width:100%;
+        height: auto;
+      }
+    }
+    &-info {
+      display: block;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      font-size: 2rem;
+      color: $color-main;
+      padding: 1rem 1.5rem;
+      transition: all .2s ease;
+
+      &-border {
+        border: 2px solid $color-main;
+        border-radius: 200px;
+      &:hover {
+        color: $color-white;
+        border-color: $color-secondary;
+        background-color: $color-secondary;
+      }
+      }
+
+    }
+
+  }
+    &-nav {
+      display: block;
+      &:hover .fi-nav-item {
+        opacity: .5;
+      }
+
+      &-item {
+        display: inline-block;
+        padding: 1rem 4rem;
+        // margin-right: 4.5rem;
+        font-size: 2rem;
+        color: $color-white;
+        //width: 1/6 * 100%;
+        transition: all .5s ease;
+        &:last-child {
+          margin-right: 0;
+        }
+        &:hover {
+          background-color: $color-secondary;
+          color: $color-white;
+          opacity: 1 !important;
+        }
+      }
+    }
+
+  &-hero {
+    background-color: $color-gray;
+    background: url('./images/fizjodentika-hero-image.jpg');
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+
+    &-button {
+      background-color: $color-secondary;
+      font-size: 25px;
+      border-radius: 200px;
+      padding: 16px 32px;
+      color: $color-white;
+      position: relative;
+      top: 25vh;
+      left: 25vw;
+      display: inline-block;
+
+
+    }
+  }
+
+  &-main {
+    background-color: $color-main-light;
+    color: $color-white;
+  }
+
+
+  &-footer {
+    background-color: $color-gray;
+    color: $color-black;
+  }
+
+}
